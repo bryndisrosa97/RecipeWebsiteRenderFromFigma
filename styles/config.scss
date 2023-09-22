@@ -1,0 +1,31 @@
+$max-width: 1290px;
+
+$columns: 12;
+$gutter: 30px;
+$main-color: #e3cdb1;
+
+@mixin button($font-size: 1rem, $height: 3.125rem, $width: 15.625rem) {
+  background-color: transparent;
+  border: 1px solid $main-color;
+  box-sizing: border-box;
+  color: $main-color;
+  font-family: 'Poppins', sans-serif;
+  font-size: $font-size;
+  height: $height;
+  width: $width;
+}
+
+@mixin kicker() {
+  color: $main-color;
+}
+
+@mixin title($font-size: 3.75rem, $margin-bottom: 1.25rem) {
+  font-family: 'Playfair Display', serif;
+  font-size: $font-size;
+  margin-bottom: $margin-bottom;
+}
+
+@mixin text($font-size: 1.125rem,  $margin-bottom: 1.875rem) {
+  font-size: $font-size;
+  margin-bottom: $margin-bottom;
+}

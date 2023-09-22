@@ -1,0 +1,17 @@
+@import './config';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+}
+
+a {
+  color: #9b9b9b;
+  text-decoration: none;
+}

@@ -1,0 +1,331 @@
+@import './config';
+
+.home {
+  margin-top: 6rem;
+
+  @media (max-width: 499px) {
+    margin-top: 3rem;
+  }
+
+  @media (max-width: 799px) {
+    margin-top: 4rem;
+  }
+}
+
+.latest-recipe {
+  background-image: linear-gradient(to bottom, #fff, #fff 20rem, #fafafa 20rem);
+
+  .show {
+    display: none;
+  }
+
+  @media (max-width: 499px) {
+    background-image: linear-gradient(to bottom, #fff, #fff 8.4375rem, #fafafa 8.4375rem);
+  }
+
+  @media (max-width: 799px) {
+    .hide {
+      display: none;
+    }
+
+    .show {
+      display: block;
+    }
+
+    .col-md-10 {
+      text-align: center;
+    }
+  }
+
+  .grubban10 {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 499px) {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .group10 {
+    margin-bottom: 2.25rem;
+    padding: 0;
+
+    @media (max-width: 799px) {
+      margin-bottom: 1.875rem;
+      margin-left: (100%/12);
+      padding-left: 2px;
+    }
+  }
+
+  .nedradiv {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .gr1 {
+    color: #e3cdb1;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    margin-bottom: 0.125rem;
+
+    @media (max-width: 499px) {
+      font-size: 0.75rem;
+      line-height: 1.125rem;
+    }
+  }
+
+  h2 {
+    color: #d0d0d0;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 3.3325rem;
+  }
+
+  .recipe-header {
+    color: #000;
+    font-family: 'Playfair Display', serif;
+    font-size: 3.75rem;
+    font-weight: 700;
+    line-height: 4.99875rem;
+    margin-bottom: 1rem;
+
+    @media (max-width: 799px) {
+      font-size: 2rem;
+      line-height: 2.7rem;
+    }
+
+    @media (max-width: 499px) {
+      font-size: 1.25rem;
+      line-height: 1.6875rem;
+    }
+  }
+
+  .textiheader {
+    color: #000;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.375rem;
+    margin-right: 0.5rem;
+
+    @media (max-width: 499px) {
+      font-size: 1rem;
+    }
+  }
+
+  .imgmynd {
+    height: 1.125rem;
+    left: 0.1875rem;
+    margin-right: 0.5rem;
+    top: 0.1875rem;
+    width: 1.125rem;
+  }
+
+  span {
+    color: #000;
+  }
+
+  //recipes
+
+  .recipes {
+    justify-content: center;
+  }
+
+  .col {
+    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .recipe {
+    background-color: #fff;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 3.125rem;
+
+    @media (max-width: 799px) {
+      margin-bottom: 1.875rem;
+    }
+  }
+
+  .image {
+    object-fit: cover;
+    overflow: hidden;
+
+    @media (max-width: 499px) {
+      height: 12.875rem;
+    }
+  }
+
+  .image-recipes {
+    height: 290px;
+    overflow: hidden;
+
+    @media (max-width: 499px) {
+      height: 12.875rem;
+    }
+  }
+
+  img {
+    object-fit: cover;
+    width: 100%;
+
+    @media (max-width: 499px) {
+      height: 12.875rem;
+    }
+  }
+
+  .img-sus {
+    @media (max-width: 499px) {
+      height: initial;
+    }
+  }
+
+  .img-recipes {
+    height: 290px;
+  }
+
+  .content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 1.5625rem;
+  }
+
+  .rec-month {
+    color: #9b9b9b;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 300;
+    line-height: 1.3125rem;
+    text-align: left;
+
+    @media (max-width: 499px) {
+      font-size: 0.75rem;
+      line-height: 1.125rem;
+    }
+  }
+
+  .the-recipe {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .rec-name {
+    color: #000;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.375rem;
+    font-weight: 700;
+    line-height: 1.833rem;
+    text-align: left;
+
+    @media (max-width: 1000px) and (min-width: 799px) {
+      font-size: 1.2rem;
+      line-height: 1.75rem;
+    }
+
+    @media (max-width: 499px) {
+      font-size: 1.125rem;
+      line-height: 1.5rem;
+    }
+  }
+
+  .main {
+    display: inline-block;
+    position: relative;
+  }
+
+  .main .play {
+    display: block;
+    height: auto;
+    max-width: 100%;
+  }
+
+  .main .svg {
+    height: 40px;
+    left: 45%;
+    position: absolute;
+    top: 45%;
+    width: 30px;
+  }
+
+  a {
+    color: #e3cdb1;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    text-align: right;
+    text-decoration-line: none;
+
+    @media (max-width: 1000px) and (min-width: 799px) {
+      font-size: 0.875rem;
+      line-height: 1.3125rem;
+    }
+
+    @media (max-width: 499px) {
+      font-size: 0.875rem;
+      line-height: 1.3125rem;
+    }
+  }
+
+  //see more
+
+  button {
+    @include button;
+
+    @media (max-width: 499px) {
+      @include button(0.75rem, 2.5rem, 11.875rem);
+    }
+  }
+
+  .see-more {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6.8125rem;
+
+    @media (max-width: 799px) {
+      margin-bottom: 2.125rem;
+    }
+  }
+
+  .line {
+    @media (min-width: 800px) {
+      border: 1px solid #e7e7e7;
+      height: 1px;
+      width: 27.5rem;
+    }
+  }
+}
+
+// videos
+
+.video-recipe {
+  margin-top: 14rem;
+
+  @media (max-width: 999px) {
+    margin-top: 6rem;
+  }
+
+  @media (max-width: 799px) {
+    margin-top: 4rem;
+  }
+
+  @media (max-width: 499px) {
+    margin-top: 20rem;
+  }
+
+  @media (max-width: 399px) {
+    margin-top: 15rem;
+  }
+}

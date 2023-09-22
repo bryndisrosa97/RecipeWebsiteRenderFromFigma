@@ -1,0 +1,144 @@
+@import './config';
+
+.book {
+  background-color: #f7f1eb;
+  height: 41.875rem;
+
+  .grid {
+    display: flex;
+    height: 56.25rem;
+  }
+
+  .row {
+    align-items: center;
+    height: 41.875rem;
+  }
+
+  .info {
+    margin-bottom: 3.125rem;
+  }
+
+  .pic {
+    margin-top: 170px;
+  }
+
+  .img {
+    box-shadow: -25px 15px 0 rgba(0, 0, 0, 0.05);
+    max-height: 100%;
+    max-width: 100%;
+  }
+
+  .kicker {
+    @include kicker;
+  }
+
+  .title-mobile {
+    display: none;
+  }
+
+  .title {
+    @include title;
+  }
+
+  .text-mobile {
+    display: none;
+  }
+
+  .text {
+    @include text;
+  }
+
+  .button-mobile {
+    display: none;
+  }
+
+  .button {
+    @include button;
+  }
+
+  @media (max-width: 799px) {
+    height: 33.125rem;
+
+    .grid {
+      display: flex;
+      height: 50rem;
+      justify-content: center;
+    }
+
+    .row {
+      height: 33.125rem;
+    }
+
+    .col {
+      align-items: flex-start;
+    }
+
+    .hbutton {
+      display: flex;
+      justify-content: center;
+    }
+
+    .content {
+      text-align: center;
+    }
+
+    .kicker {
+      display: none;
+    }
+
+    .title {
+      display: none;
+    }
+
+    .title-mobile {
+      @include title(2rem, 0.5rem);
+
+      display: block;
+    }
+
+    .text {
+      display: none;
+    }
+
+    .text-mobile {
+      @include text(0.9375rem, 1rem);
+
+      display: block;
+    }
+
+    .button {
+      display: none;
+    }
+
+    .button-mobile {
+      @include button(0.75rem, 2.5rem, 11.875rem);
+
+      display: block;
+    }
+
+    .info {
+      margin-bottom: 0;
+    }
+
+    .pic {
+      margin-top: 0;
+    }
+  }
+
+  @media (max-width: 499px) {
+    height: 28.125rem;
+
+    .row {
+      display: block;
+      height: 28.125rem;
+    }
+
+    .info {
+      margin-top: 4rem;
+    }
+
+    .pic {
+      margin-top: 4rem;
+    }
+  }
+}

@@ -1,0 +1,191 @@
+@import './config';
+
+.newsletter {
+  background-color: #000;
+  min-height: 320px;
+
+  .content-desktop {
+    display: block;
+  }
+
+  .content-mobile {
+    display: none;
+  }
+
+  .grid {
+    height: 100%;
+  }
+
+  .col {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+  }
+
+  .newsinfo {
+    min-height: 320px;
+    position: relative;
+  }
+
+  .contactinfo {
+    align-items: center;
+    display: flex;
+    min-height: 320px;
+    position: relative;
+  }
+
+  .emailtext {
+    color: #fff;
+    font-weight: 500;
+  }
+
+  .emailinfo {
+    align-items: center;
+    position: absolute;
+    width: 100%;
+  }
+
+  .emailstring2 {
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+
+  .emailstring {
+    color: #525252;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+
+  .line {
+    color: #fff;
+    margin-bottom: 0.5rem;
+  }
+
+  .textinn {
+    position: absolute;
+    top: 50%;
+  }
+
+  .button-content {
+    min-height: 320px;
+    position: relative;
+  }
+
+  .hbutton {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+  }
+
+  .button {
+    @include button;
+
+    float: right;
+  }
+
+  .newstext {
+    color: #e3cdb1;
+    font-weight: 500;
+  }
+
+  .newstitle {
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1.25rem;
+  }
+
+  @media (max-width: 999px) {
+    min-height: 0;
+
+    .col {
+      margin-bottom: 0;
+    }
+
+    .content-desktop {
+      display: none;
+    }
+
+    .content-mobile {
+      display: contents;
+      text-align: center;
+    }
+
+    .row {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      justify-content: center;
+      margin-top: 4rem;
+    }
+
+    .newsinfo {
+      min-height: 0;
+    }
+
+    .contactinfo {
+      margin-top: 2.5rem;
+      min-height: 0;
+    }
+
+    .button-content {
+      margin-bottom: 3.75rem;
+      margin-top: 1.875rem;
+      min-height: 0;
+    }
+
+    .hbutton {
+      position: relative;
+      text-align: center;
+    }
+
+    .klasi {
+      display: none;
+    }
+
+    .emailinfovideo {
+      align-items: center;
+      position: initial;
+      width: 100%;
+    }
+
+    .try {
+      display: none;
+    }
+
+    .email-mobile {
+      text-align: left;
+    }
+
+    .newstitle {
+      font-size: 1.25rem;
+      line-height: 1.67rem;
+      margin: 0;
+      text-align: center;
+    }
+
+    .textinn {
+      position: initial;
+    }
+
+    .button {
+      float: initial;
+    }
+
+    .newstext {
+      font-size: 0.75rem;
+      line-height: 1.125rem;
+    }
+
+    .emailtext {
+      font-size: 0.75rem;
+    }
+  }
+}

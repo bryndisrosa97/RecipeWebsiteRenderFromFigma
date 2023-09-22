@@ -1,0 +1,183 @@
+@import './config';
+
+.hero {
+  background-color: #fafafa;
+  background-image: url('img/pie-bg.png');
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  height: 50rem;
+
+  .grid {
+    display: flex;
+    height: 100%;
+  }
+
+  .col {
+    align-items: center;
+    display: flex;
+  }
+
+  .kicker {
+    @include kicker;
+  }
+
+  .title {
+    @include title;
+  }
+
+  .text {
+    @include text;
+  }
+
+  .button {
+    @include button;
+  }
+
+  .button:hover {
+    background-color: #e3cdb1;
+    color: #fff;
+  }
+
+  .icon-text {
+    align-items: center;
+    color: #5e5b69;
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 300;
+    height: 1rem;
+    left: 2.25rem;
+    //line-height: 1.125rem;
+    top: 0.14rem;
+    width: 6.44rem;
+  }
+
+  .res-container {
+    display: flex;
+  }
+
+  .icons {
+    display: flex;
+  }
+
+  .pic-icon {
+    margin-right: 10px;
+  }
+
+  .ttext-mini {
+    display: none;
+  }
+
+  span {
+    color: #000;
+    font-weight: 400;
+  }
+
+  @media (max-width: 499px) {
+    background-position: 0%;
+    background-size: cover;
+    height: 500px;
+
+    .grid {
+      display: flex;
+      justify-content: center;
+    }
+
+    .col {
+      align-items: flex-start;
+    }
+
+    .content {
+      text-align: center;
+    }
+
+    .kicker {
+      font-size: 0.75rem;
+      margin-top: 4.375rem;
+    }
+
+    .title {
+      font-size: 2rem;
+    }
+
+    .text {
+      display: none;
+    }
+
+    .button {
+      @include button(0.75rem, 2.5rem, 11.875rem);
+    }
+
+    .ttext-mini {
+      color: #5e5b69;
+      display: contents;
+      text-align: left;
+    }
+
+    .mini-title {
+      font-size: 2rem;
+      font-weight: 700;
+      line-height: 2.6875rem;
+    }
+
+    .miniextra-text {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1rem;
+      font-weight: 300;
+    }
+
+    .mini-content {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      flex-wrap: wrap;
+      margin-top: 3.35rem;
+    }
+
+    .icon-text-mini {
+      font-size: 0.9375rem;
+    }
+
+    .mini-res-container {
+      display: flex;
+      flex-direction: column;
+      margin-top: 1.5rem;
+    }
+  }
+
+  @media (max-width: 799px) {
+    background-position: 0%;
+    background-size: cover;
+    height: 31.25rem;
+
+    .grid {
+      display: flex;
+      justify-content: center;
+    }
+
+    .col {
+      align-items: flex-start;
+    }
+
+    .content {
+      text-align: center;
+    }
+
+    .kicker {
+      font-size: 0.75rem;
+      margin-top: 4.375rem;
+    }
+
+    .title {
+      font-size: 2rem;
+    }
+
+    .text {
+      display: none;
+    }
+
+    .button {
+      @include button(0.75rem, 2.5rem, 11.875rem);
+    }
+  }
+}

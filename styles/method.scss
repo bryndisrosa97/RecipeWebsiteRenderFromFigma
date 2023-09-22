@@ -1,0 +1,211 @@
+@import './config';
+
+/* Method */
+.method-header {
+  align-items: flex-end;
+  color: #d0d0d0;
+  display: flex;
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: bold;
+  height: 53px;
+  //left: 0px;
+  line-height: 53px;
+  margin-top: 90px;
+  width: 222px;
+}
+
+.method-content {
+  align-items: center;
+  color: #5e5b69;
+  display: flex;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 32px;
+  margin-top: 35px;
+  top: 88px;
+}
+
+.method-container {
+  display: flex;
+  flex-direction: column;
+  //height: 1000px;
+  margin-bottom: 10vmax; //nytt
+  right: 155px;
+  top: 740px;
+}
+
+/* Ingredients */
+
+.ingredients-container {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  height: 700px;
+  left: 150px;
+  top: 767px;
+  width: 269px;
+}
+
+.ingredients-header {
+  align-items: flex-end;
+  color: #d0d0d0;
+  display: flex;
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: bold;
+  height: 53px;
+  line-height: 53px;
+  margin-top: 117px;
+  position: static;
+  width: 214px;
+}
+
+.ingredients-rammi {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  height: 217px;
+  margin-top: 40px;
+  position: static;
+  width: 180px;
+}
+
+.rammi1 {
+  top: 93px;
+}
+
+.rammi2 {
+  top: 350px;
+}
+
+.ingredients-header2 {
+  align-items: center;
+  color: #000;
+  display: flex;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: normal;
+  height: 17px;
+  line-height: 17px;
+  margin-bottom: 20px;
+  position: static;
+  //width: 125px;
+}
+
+.ingredients-number {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  height: 30px;
+  margin-bottom: 20px;
+  position: static;
+  width: 180px;
+}
+
+.in1 {
+  top: 187px;
+}
+
+.in2 {
+  top: 137px;
+}
+
+.in3 {
+  top: 87px;
+}
+
+.in4 {
+  top: 37px;
+}
+
+.ingredients-p1 {
+  color: #e3cdb1;
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: bold;
+  height: 30px;
+  line-height: 18px;
+  margin-right: 50px;
+  position: static;
+  width: 14px;
+}
+
+.ingredients-p2 {
+  align-items: center;
+  color: #9b9b9b;
+  display: flex;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  height: 30px;
+  left: 64px;
+  line-height: 17px;
+  //position: static;
+  //width: 108px;
+}
+
+.emailinfo-videopage {
+  top: 175px;
+}
+
+.sushi-play {
+  display: inline-block;
+  position: relative;
+}
+
+.img-sushi {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+.playicon {
+  height: 40px;
+  left: 45%;
+  position: absolute;
+  top: 45%;
+  width: 30px;
+}
+
+.method-text {
+  word-break: break-word;
+}
+
+.mtext-mini {
+  display: none;
+}
+
+@media (max-width: 499px) {
+  .method-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; //nytt
+    //height: 1550px;
+    margin-bottom: 5vmax; //nytt
+    right: 155px;
+    top: 740px;
+  }
+
+  .mtext-mini {
+    display: contents;
+  }
+
+  .mtext-biggie {
+    display: none;
+  }
+}
+
+.emailinfovideo {
+  align-items: center;
+  position: absolute;
+  top: 140px;
+  width: 100%;
+}

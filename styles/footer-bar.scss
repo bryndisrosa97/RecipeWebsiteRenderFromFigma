@@ -1,0 +1,60 @@
+@import './config';
+
+.footer-bar {
+  align-items: center;
+  background-color: #fff;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  height: 20.6875rem;
+  justify-content: center;
+
+  @media (max-width: 499px) {
+    height: 122px;
+    margin-bottom: 2.6875rem;
+    margin-top: 2.6875rem;
+  }
+
+  .join-us {
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.125rem;
+
+    @media (max-width: 499px) {
+      color: #2e2624;
+      font-size: 0.875rem;
+      line-height: 1.3125rem;
+    }
+  }
+
+  .images {
+    margin-bottom: 1.1875rem;
+    margin-top: 1.8125rem;
+
+    @media (max-width: 499px) {
+      margin-bottom: 1.3125rem;
+      margin-top: 1rem;
+    }
+  }
+
+  img {
+    height: 40px;
+    object-fit: cover;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+  }
+
+  .yam {
+    color: #d0d0d0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 300;
+    line-height: 1.3125rem;
+
+    @media (max-width: 499px) {
+      color: #d6d6d6;
+    }
+  }
+}
