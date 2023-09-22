@@ -8,12 +8,6 @@ Fyrsta hópverkefnið í vefforritun 1 á haustönn 2020. <br/>
  * **Katarina Kekic**  *kka10@hi.is*
  * **Kristín Eva Ólafsdóttir** *keo7@hi.is*
 
-Notendanöfnin hópameðlima á github eru ;<br/>
-*bryndisrosa97* hjá Bryndísi<br/>
-*eydissjofn* hjá Eydísi <br/>
-*katkek* hjá Katarinu <br/>
-*kristin3va* hjá Kristínu <br/>
-
 ## Lýsing á verkefni
 
 Verkefnið felst í því að smíða vef eftir forskrift.
@@ -32,7 +26,7 @@ Notast verður við Git og GitHub í hópavinnunni. Hópmeðlimir munu „commit
 
 Náð er í verkefnið með því að skrifa eftirfarandi í Terminal/Command Prompt
 ```
-git clone https://github.com/katkek/vef1-2020-h1.git
+git clone https://github.com
 ```
 
 ### Tæki og tól
@@ -91,23 +85,5 @@ npm run dev
 ```
 Þegar skipunin `npm run dev` er keyrð mun verkefnið keyra upp vefþjón með browser-sync, þýða sass skrár og fylgjast með breytingum á HTML og Sass.
 
-## Mat
 
-* 10% - `README` eftir forskrift, tæki og tól uppsett
-* 15% – Snyrtilegt, gilt (skv. stylelint) CSS/Sass, gilt og aðgengilegt HTML
-* 15% – Almennt útlit
-* 15% – Forsíða
-* 15% – Listasíða
-* 15% – Uppskriftasíða
-* 15% – Almennur skalanleiki
-
-## Sett fyrir
-
-Verkefni sett fyrir í fyrirlestri mánudaginn 5. október 2020.
-
-
-## Hönnun
-
-Upprunaleg hönnun eftir [Meghan Regior](https://twitter.com/meghanregior) fyrir verkefni í vefforritun 2016. Flutt í Figma og uppfært af Óla.
-
-> Útgáfa 0.1
+![image](https://github.com/bryndisrosa97/RecipeWebsiteRenderFromFigma/assets/61384036/9f32ef75-5b7e-4ab0-b894-8a261b0f9194)
