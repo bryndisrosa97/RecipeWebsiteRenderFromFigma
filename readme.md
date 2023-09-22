@@ -87,3 +87,6 @@ npm run dev
 
 
 ![image](https://github.com/bryndisrosa97/RecipeWebsiteRenderFromFigma/assets/61384036/9f32ef75-5b7e-4ab0-b894-8a261b0f9194)
+
+
+![image](https://github.com/bryndisrosa97/RecipeWebsiteRenderFromFigma/assets/61384036/aca95800-4f25-4a3f-8ad4-f2196b66dfc9)
